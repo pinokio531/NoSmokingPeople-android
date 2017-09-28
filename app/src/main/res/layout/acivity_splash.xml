@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splashlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="#90bacb"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="16dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="여러분의 활기찬 금연 파트너!"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:id="@+id/icon"
+        android:layout_width="207dp"
+        android:layout_height="205dp"
+        android:background="@drawable/img_logo" />
+
+    <ImageView
+        android:layout_marginTop="77dp"
+        android:id="@+id/character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_character_splash" />
+
+</LinearLayout>

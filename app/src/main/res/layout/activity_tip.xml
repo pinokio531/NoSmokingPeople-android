@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#90bacb"
+        android:id="@+id/relativeLayout3">
+
+        <Button
+            android:id="@+id/buttonback"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="금연의 민족"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/container3"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:background="@drawable/textbox3">
+        </android.support.v4.view.ViewPager>
+        
+        <Button
+            android:id="@+id/right"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:elevation="0dp"
+            android:background="@drawable/btn_arrow_r"/>
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:elevation="0dp"
+            android:background="@drawable/btn_arrow"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

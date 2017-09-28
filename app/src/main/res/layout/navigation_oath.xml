@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#90bacb">
+
+        <Button
+            android:id="@+id/buttonback"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="금연의 민족"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/SecondTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#f26c4f"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:text="금연서약서"
+        android:layout_marginTop="41dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#59584c"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/name"
+            android:layout_marginRight="38dp"
+            android:text="나 "
+            />
+
+        <TextView
+            android:id="@+id/me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#59584c"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="44dp"
+            android:text="는(은) "
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/textbox"
+            android:textSize="30sp"
+            android:textColor="#6296ae"
+            android:layout_marginRight="9dp"
+            android:layout_toLeftOf="@id/me"
+            android:layout_centerVertical="true"
+            android:elevation="2dp"
+            android:gravity="center_horizontal|center_vertical"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="75dp"
+            android:text="부터"
+            android:textColor="#59584c"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/DatePicker"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@id/from"
+            android:background="@drawable/calendarview"
+            android:textSize="15sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="#ffffff"></TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="49dp"
+            android:textSize="20sp"
+            android:textColor="#59584c"
+            android:gravity="center_horizontal"
+            android:text="소중한 자신과 주위 사람들의 건강을 위해, 오늘부터 금연을 시작하겠습니다."
+            />
+    </LinearLayout>
+
+</LinearLayout>

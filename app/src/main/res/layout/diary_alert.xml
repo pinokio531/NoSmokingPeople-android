@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/textbox">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘의 금연 체크"
+        android:layout_marginTop="30dp"
+        android:textSize="24dp"
+        android:textColor="#6296ae"
+        android:layout_gravity="center"/>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_gravity="center">
+        
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="11dp"
+            android:layout_centerInParent="true"
+            android:background="#f26c4f"/>
+
+        <RadioGroup
+            android:id="@+id/Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+            
+
+            <RadioButton
+                android:id="@+id/OnePoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:theme="@style/MyRadioButton"
+                android:background="@drawable/btn_radio"
+                android:elevation="2dp"
+                android:layout_marginRight="14dp" />
+
+
+            <RadioButton
+                android:id="@+id/TwoPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyRadioButton"
+                android:background="@drawable/btn_radio"
+                android:elevation="2dp"
+                android:layout_marginRight="14dp"/>
+
+            <RadioButton
+                android:id="@+id/ThreePoint"
+                android:layout_width="wrap_content"
+                android:theme="@style/MyRadioButton"
+                android:background="@drawable/btn_radio"
+                android:elevation="2dp"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/FourPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyRadioButton"
+                android:background="@drawable/btn_radio"
+                android:elevation="2dp"
+                android:layout_marginLeft="14dp"/>
+
+            <RadioButton
+                android:id="@+id/FivePoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyRadioButton"
+                android:background="@drawable/btn_radio"
+                android:elevation="2dp"
+                android:layout_marginLeft="14dp"/>
+
+        </RadioGroup>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1점"
+            android:textColor="#59584c"
+            android:textSize="12dp"
+            android:layout_marginRight="28dp"
+            android:id="@+id/textOne"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2점"
+            android:textColor="#59584c"
+            android:textSize="12dp"
+            android:layout_marginRight="28dp"
+            android:id="@+id/textTwo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3점"
+            android:textColor="#59584c"
+            android:textSize="12dp"
+            android:id="@+id/textThree"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4점"
+            android:textColor="#59584c"
+            android:textSize="12dp"
+            android:layout_marginLeft="28dp"
+            android:id="@+id/textFour"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5점"
+            android:textColor="#59584c"
+            android:textSize="12dp"
+            android:layout_marginLeft="28dp"
+            android:id="@+id/textFive"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1점: 담배를 3개비 이상 피웠음\n2점: 담배를 2개비 피웠음\n3점: 담배를 1개비 피웠음\n4점: 담배는 피우지 않았지만 힘들었음\n5점: 담배 생각이 안 났음"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="23dp"
+            android:text="닫기"
+            android:background="#00ff0000"
+            android:textColor="@drawable/pressed2"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="23dp"
+            android:text="확인"
+            android:textColor="@drawable/pressed2"
+            android:background="#00ff0000"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

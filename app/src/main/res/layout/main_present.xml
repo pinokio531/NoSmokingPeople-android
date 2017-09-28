@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="66dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/presenthealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="다시 찾은 건강"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="30dp"
+            android:textColor="#6296ae"
+            android:layout_marginLeft="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="15dp"
+            android:elevation="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textbox2">
+
+            <ImageView
+                android:id="@+id/img_1"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/img_20_m"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/img_1text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "20분 후"
+                android:textColor="#59584c"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/img_1"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/subtext1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "혈압과 맥박이 정상으로 돌아옵니다."
+                android:textColor="#59584c"
+                android:textSize="11dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/img_1text"
+                android:layout_toRightOf="@+id/img_1"
+                android:layout_marginLeft="10dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="210dp"
+                android:max ="100"
+                android:layout_height="13dp"
+                android:layout_below="@+id/subtext1"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@+id/img_1"
+                android:layout_marginLeft="10dp"
+                android:progressDrawable="@drawable/progress_bar"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="15dp"
+            android:elevation="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textbox2">
+
+            <ImageView
+                android:id="@+id/img_2"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/img_12_h"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/img_2text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "12시간 후"
+                android:textColor="#59584c"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/img_2"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/subtext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "혈액 속의 산소량이 정상으로 돌아옵니다."
+                android:textColor="#59584c"
+                android:textSize="11dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/img_2text"
+                android:layout_toRightOf="@+id/img_2"
+                android:layout_marginLeft="10dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBa2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="210dp"
+                android:max ="100"
+                android:layout_height="13dp"
+                android:layout_below="@+id/subtext2"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@+id/img_2"
+                android:layout_marginLeft="10dp"
+                android:progressDrawable="@drawable/progress_bar"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="15dp"
+            android:elevation="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textbox2">
+
+            <ImageView
+                android:id="@+id/img_3"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/img_2_w"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/img_3text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "2주 후"
+                android:textColor="#59584c"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/img_3"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/subtext3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "혈액 기능이 좋아지고 폐기능이 좋아집니다."
+                android:textColor="#59584c"
+                android:textSize="11dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/img_3text"
+                android:layout_toRightOf="@+id/img_3"
+                android:layout_marginLeft="10dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar3"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="210dp"
+                android:max ="100"
+                android:layout_height="13dp"
+                android:layout_below="@+id/subtext3"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@+id/img_3"
+                android:layout_marginLeft="10dp"
+                android:progressDrawable="@drawable/progress_bar"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="15dp"
+            android:elevation="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textbox2">
+
+            <ImageView
+                android:id="@+id/img_4"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/img_5_w"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/img_4text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "5주 후"
+                android:textColor="#59584c"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/img_4"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/subtext4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "기침이 줄어들고 숨쉬기 편해집니다."
+                android:textColor="#59584c"
+                android:textSize="11dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/img_4text"
+                android:layout_toRightOf="@+id/img_4"
+                android:layout_marginLeft="10dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="210dp"
+                android:max ="100"
+                android:layout_height="13dp"
+                android:layout_below="@+id/subtext4"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@+id/img_4"
+                android:layout_marginLeft="10dp"
+                android:progressDrawable="@drawable/progress_bar"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/savething"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="절약한 물품"
+           android:gravity="center_horizontal|center_vertical"
+            android:textSize="30dp"
+            android:textColor="#6296ae"
+            android:layout_marginLeft="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="15dp"
+            android:elevation="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textbox2">
+
+            <ImageView
+                android:id="@+id/img_11"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/img_day_1"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/img_11text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "1일: 햄버거 세트메뉴"
+                android:textColor="#59584c"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/img_11"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/subtext11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "4,500원"
+                android:textColor="#59584c"
+                android:textSize="11dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/img_11text"
+                android:layout_toRightOf="@+id/img_11"
+                android:layout_marginLeft="10dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBa11"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="210dp"
+                android:max ="100"
+                android:layout_height="13dp"
+                android:layout_below="@+id/subtext11"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@+id/img_11"
+                android:layout_marginLeft="10dp"
+                android:progressDrawable="@drawable/progress_bar"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="15dp"
+            android:elevation="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textbox2">
+
+            <ImageView
+                android:id="@+id/img_12"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/img_day_3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/img_12text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "3일: 영화관"
+                android:textColor="#59584c"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/img_12"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/subtext12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "13,000원"
+                android:textColor="#59584c"
+                android:textSize="11dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/img_12text"
+                android:layout_toRightOf="@+id/img_12"
+                android:layout_marginLeft="10dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBa12"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="210dp"
+                android:max ="100"
+                android:layout_height="13dp"
+                android:layout_below="@+id/subtext12"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@+id/img_12"
+                android:layout_marginLeft="10dp"
+                android:progressDrawable="@drawable/progress_bar"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="15dp"
+            android:elevation="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textbox2"
+            android:layout_marginBottom="76dp">
+
+            <ImageView
+                android:id="@+id/img_13"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/img_day_7"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/img_13text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "7일: 놀이공원 자유이용권"
+                android:textColor="#59584c"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/img_13"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/subtext13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "35,000원"
+                android:textColor="#59584c"
+                android:textSize="11dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/img_13text"
+                android:layout_toRightOf="@+id/img_13"
+                android:layout_marginLeft="10dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBa13"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="210dp"
+                android:max ="100"
+                android:layout_height="13dp"
+                android:layout_below="@+id/subtext13"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@+id/img_13"
+                android:layout_marginLeft="10dp"
+                android:progressDrawable="@drawable/progress_bar"/>
+
+        </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
+
