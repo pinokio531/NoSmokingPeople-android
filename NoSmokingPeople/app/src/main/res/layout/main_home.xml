@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8f8">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/running"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_character_home"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="45dp" />
+
+        <TextView
+            android:id="@+id/noSmokingGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="금연 목표"
+            android:layout_toRightOf="@id/running"
+            android:textColor="#59584c"
+            android:textSize="20dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="73dp"/>
+
+        <TextView
+            android:id="@+id/dayGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:textColor="#6296ae"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="35dp"
+            android:layout_toRightOf="@id/running"
+            android:layout_below="@+id/noSmokingGoal"
+            android:gravity="center"/>
+
+
+        <RelativeLayout
+            android:id="@+id/sign1"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/progressBar"
+            android:layout_marginTop="22dp"
+            android:elevation="2dp"
+            android:background="@drawable/textbox2">
+
+            <TextView
+                android:id="@+id/icon1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/img_sign_1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="금연중"
+                android:textColor="#59584c"
+                android:textSize="18dp"
+                android:layout_marginLeft="6dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/icon1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:textColor="@color/colorCarrot"
+                android:textSize="15dp"
+                android:id="@+id/time1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sign2"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/sign1"
+            android:layout_marginTop="5dp"
+            android:elevation="2dp"
+            android:background="@drawable/textbox2">
+
+            <TextView
+                android:id="@+id/icon2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/img_sign_2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수명연장"
+                android:textColor="#59584c"
+                android:textSize="18dp"
+                android:layout_marginLeft="6dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/icon2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:textColor="@color/colorCarrot"
+                android:textSize="15dp"
+                android:id="@+id/time2"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sign3"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/sign2"
+            android:layout_marginTop="5dp"
+            android:elevation="2dp"
+            android:background="@drawable/textbox2">
+
+            <TextView
+                android:id="@+id/icon3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/img_sign_3"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="절약한 담배값"
+                android:textColor="#59584c"
+                android:textSize="18dp"
+                android:layout_marginLeft="6dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/icon3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:textColor="@color/colorCarrot"
+                android:textSize="15dp"
+                android:id="@+id/saveprice"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sign4"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/sign3"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="18dp"
+            android:elevation="2dp"
+            android:background="@drawable/textbox2">
+
+            <TextView
+                android:id="@+id/icon4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/img_sign_4"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="안피운 담배개비"
+                android:textColor="#59584c"
+                android:textSize="18dp"
+                android:layout_marginLeft="6dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/icon4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:textColor="@color/colorCarrot"
+                android:textSize="15dp"
+                android:id="@+id/noSmokingAmount"/>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="280dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/running"
+            android:layout_marginTop="30dp"
+            android:progressDrawable="@drawable/progress_bar"/>
+    </RelativeLayout>
+
+</LinearLayout>

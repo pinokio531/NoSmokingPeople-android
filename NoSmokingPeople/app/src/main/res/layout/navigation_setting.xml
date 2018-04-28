@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#90bacb">
+
+        <Button
+            android:id="@+id/buttonback"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="금연의 민족"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="앱 정보"
+        android:layout_marginLeft="21dp"
+        android:textColor="#6296ae"
+        android:textSize="12sp"
+        android:elevation="1dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:elevation="1dp">
+
+        <TextView
+            android:id="@+id/nowversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재 버전"
+            android:textSize="15sp"
+            android:textColor="#59584c"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1.01"
+            android:textColor="@drawable/pressed2"
+            android:textSize="15dp"
+            android:background="#00ff0000"
+            android:layout_toRightOf="@+id/nowversion"
+            android:id ="@+id/version"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:elevation="1dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/curentversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최신 버전"
+            android:textSize="15sp"
+            android:textColor="#59584c"
+            android:layout_below="@+id/nowversion"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1.02"
+            android:textColor="#6296ae"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/curentversion"
+            android:layout_below="@+id/nowversion"
+            android:background="#00ff0000"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="정보 초기화"
+        android:layout_marginLeft="21dp"
+        android:textColor="#6296ae"
+        android:textSize="12sp"
+        android:elevation="1dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:elevation="1dp">
+
+        <TextView
+            android:id="@+id/diaryarlam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="초기화 하기"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="#59584c"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text = "초기화"
+            android:textColor="@drawable/pressed2"
+            android:textSize="15dp"
+            android:background="#00ff0000"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

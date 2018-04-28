@@ -1,0 +1,44 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uiappcenter.NoSmokingPeople"
+    android:versionCode="6"
+    android:versionName="1.0">
+    
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+
+    <application
+        android:name="com.uiappcenter.NoSmokingPeople.retrofit.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@drawable/img_logo2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.uiappcenter.NoSmokingPeople.start_page.Splash"
+            android:label="금연의 민족">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.uiappcenter.NoSmokingPeople.start_page.Search" />
+        <activity android:name="com.uiappcenter.NoSmokingPeople.start_page.Oath" />
+        <activity android:name="com.uiappcenter.NoSmokingPeople.viewpager.ViewPagerActive" />
+        <activity android:name="com.uiappcenter.NoSmokingPeople.main_menu.MainActivity"/>
+        <activity android:name="com.uiappcenter.NoSmokingPeople.main_menu.MenuOath"></activity>
+        <activity android:name="com.uiappcenter.NoSmokingPeople.main_menu.MenuExplain"></activity>
+        <activity android:name="com.uiappcenter.NoSmokingPeople.main_menu.MenuQuestion"></activity>
+        <activity android:name="com.uiappcenter.NoSmokingPeople.menu_tip.TipViewPagerActive"></activity>
+        <activity android:name="com.uiappcenter.NoSmokingPeople.main_menu.MenuSetting"></activity>
+        <activity android:name="com.uiappcenter.NoSmokingPeople.main_menu.ApplicationInformation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

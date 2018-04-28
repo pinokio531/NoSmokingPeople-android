@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CheckList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#90bacb">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="금연의 민족"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:background="@drawable/ic_action_name"
+            android:layout_marginRight="21dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/SecondTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:gravity="center_horizontal"
+        android:text="흡연도 체크"
+        android:textColor="#f26c4f"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/Question1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="36dp"
+        android:textColor="#59584c"
+        android:textSize="15sp"
+        android:text="몇 년 정도 담배를 피우셨습니까?" />
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/WriteYear"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="18dp"
+            android:textSize="30sp"
+            android:elevation="2dp"
+            android:textColor="#6296ae"
+            android:background="@drawable/textbox"
+            android:gravity="center_horizontal|center_vertical"
+            android:cursorVisible="false"
+            android:inputType="number"
+            android:maxLength="2">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/Year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/WriteYear"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:text="년"
+            android:textColor="#f26c4f"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Question2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="36dp"
+        android:textColor="#59584c"
+        android:textSize="15sp"
+        android:text="하루 평균 몇 개비 정도 피우셨습니까?" />
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/WriteAmount"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="18dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30sp"
+            android:textColor="#6296ae"
+            android:elevation="2dp"
+            android:background="@drawable/textbox"
+            android:cursorVisible="false"
+            android:inputType="number"
+            android:maxLength="3">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/Amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/WriteAmount"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:text="개비"
+            android:textColor="#f26c4f"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Question3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="36dp"
+        android:textColor="#59584c"
+        android:textSize="15sp"
+        android:text="당신이 피우던 담배 1갑 평균 가격을 적어주세요." />
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/WritePrice"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="18dp"
+            android:textSize="30sp"
+            android:elevation="2dp"
+            android:textColor="#6296ae"
+            android:background="@drawable/textbox"
+            android:gravity="center_horizontal|center_vertical"
+            android:cursorVisible="false"
+            android:inputType="number"
+            android:maxLength="4">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/WritePrice"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:text="원"
+            android:textColor="#f26c4f"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>
