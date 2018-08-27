@@ -62,7 +62,6 @@ public class ApplicationController extends Application{
                 .build();
 
         Retrofit.Builder builder = new Retrofit.Builder();
-        Retrofit.Builder builder1 = new Retrofit.Builder();
 
         Retrofit retrofit = builder
                 .baseUrl(baseUrl)
